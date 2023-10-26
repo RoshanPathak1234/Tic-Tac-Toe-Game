@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital@1&family=Montserrat&family=Poppins&family=Roboto:ital@0;1&family=Sacramento&family=Young+Serif&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital@1&family=Montserrat&family=PT+Serif&family=Poppins&family=Roboto:ital@0;1&family=Sacramento&family=Young+Serif&display=swap');
+
+
+
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: black;
+    color: white;
+    padding: 1vw;
+    font-family: 'Young Serif', serif;
+    font-size: 2vw;
+}
+
+.boxContainer {
+    padding: 5vh 0 5vh 0;
+    background-color: rgb(144, 42, 240);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+
+.container {
+    display: grid;
+    text-align: center;
+    grid-template-columns: repeat(3,10vw);
+    grid-template-rows: repeat(3,10vw);
+    font-size: 8vw;
+    margin: 3vw;
+    font-style: inherit;
+    position: relative;
+}
+
+.line {
+    background-color: rgb(231, 27, 27);
+    width: 0;
+    height: 3px;
+    position: absolute;
+    transition: width 1s ease-in-out;
+}
+
+.box {
+    border: 1px solid black;
+}
+.box:hover {
+    background-color: rgb(216, 175, 216);
+}
+.boxInfo {
+    font-family: 'PT Serif', serif;
+    line-height: 7vh;
+    text-align: center;
+    height: fit-content;
+}
+.borderLeftZero {
+    border-left: 0;
+}
+.borderRightZero {
+    border-right: 0;
+}
+.borderTopZero {
+    border-top: 0;
+}
+.borderBottomZero {
+    border-bottom: 0;
+}
+#turn {
+    font-size: 2vw; 
+    font-weight: 500;
+}
+#reset {
+    height: 2rem;
+    width: 6rem;
+    border-radius: 40px;
+    font-style: oblique;
+    background-color: aqua;
+    cursor: pointer;
+    padding: 3px 0 3px 0;
+}
+
+#reset:hover {
+    background-color: rgb(105, 180, 230);
+}
+
+.image img {
+    width: 0;
+    transition: width 1s ease-in-out;
+}
+
+@media(max-width : 800px) {
+    .boxContainer {
+        flex-wrap: wrap;
+        height: 200vh;
+        width: 100vw;
+    }
+    #turn {
+        font-size: 4dvb;
+    }
+    .boxInfo h1 {
+        font-size: 1.5rem;
+    }
+    .container {
+        font-size: 15vw;
+        grid-template-columns: repeat(3,20vw);
+        grid-template-rows: repeat(3,20vw);
+    }
+}
